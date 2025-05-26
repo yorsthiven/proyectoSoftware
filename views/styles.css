@@ -1,25 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2.5rem;
-}
-
-body {
-    min-height: 100vh;
-    background-color: #000;
-    color: whitesmoke;
-    display: grid;
-    place-content: center;
-    padding: 1rem;
-} */
-
 body, html {
   margin: 0;
   padding: 0;
@@ -64,7 +42,7 @@ nav li.active {
 }
 
 .hero {
-  background-image: url('/images/5.webp');
+  background-image: url('./images/portada.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -72,15 +50,6 @@ nav li.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* fondo negro translúcido */
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  /* display: inline-block; */
 }
 
 .hero-content h5 {
