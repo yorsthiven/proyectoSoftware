@@ -6,24 +6,24 @@
   padding: 4rem 2rem;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 600px; /* Ajusta esto si quieres aún más altura */
+  min-height: 600px;
 }
 
 
 .imagen-descripcion {
   width: 100%;
-  max-width: 800px; /* puedes subir a 700px o quitarlo */
+  max-width: 800px; 
   height: auto;
   object-fit: contain;
   border-radius: 8px;
   display: block;
-  flex: 1 1 40%; /* permite que crezca al 40% del espacio */
+  flex: 1 1 40%; 
   margin: 0 auto;
 }
 
 
 .texto-descripcion {
-  flex: 1 1 50%; /* ocupa alrededor del 50% */
+  flex: 1 1 50%; 
   text-align: center;
   padding: 1rem;
 }
@@ -33,7 +33,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #654522; /* tono café para identidad */
+  color: #654522; 
 }
 
 .texto-descripcion p {
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* un poco más pequeño para más espacio usable */
+  gap: 1rem; 
   padding: 2rem;
   flex-wrap: wrap;
 }

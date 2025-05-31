@@ -4,13 +4,12 @@ height: 100vh;
 font-family: sans-serif;
 }
 
-/* Área de contenido principal */
+
 .contenido-panel {
 flex: 1;
 padding: 2rem;
 }
 
-/* Encabezado dashboard */
 .encabezado-dashboard {
 display: flex;
 justify-content: space-between;
@@ -40,7 +39,6 @@ position: relative;
 z-index: 2;
 }
 
-/* Fecha */
 .fecha-actual {
 font-weight: bold;
 color: #333;
@@ -48,7 +46,6 @@ font-size: 1.2rem;
 margin-bottom: 1.5rem;
 }
 
-/* Botones de acción */
 .botones-acciones {
 display: flex;
 gap: 1rem;
@@ -73,7 +70,6 @@ background-color: #654522;
 background-color: #654522;
 }
 
-/* Métricas resumen */
 .resumen-metricas {
 display: flex;
 gap: 1rem;
@@ -95,8 +91,6 @@ background-color: #b6ebb7;
 }
 
 
-
-/* Tabla de próximas citas */
 .tabla-proximas-citas table {
 width: 100%;
 border-collapse: collapse;
@@ -123,7 +117,6 @@ background-color: #f9f9f9;
 margin-bottom: 10px;
 }
 
-/* Mensaje de error */
 .mensaje-error {
 color: red;
 font-weight: bold;

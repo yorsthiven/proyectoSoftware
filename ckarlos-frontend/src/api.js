@@ -1,10 +1,18 @@
-// src/api.js
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3500', // ajusta si tu backend corre en otro puerto o dominio
-  headers: { 'Content-Type': 'application/json' },
-  withCredentials: true,            // si necesitas cookies o credenciales
+baseURL: 'http://localhost:3500',
+headers: { 'Content-Type': 'application/json' },
+withCredentials: true,
+});
+
+API.interceptors.request.use((config) => {
+const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+if (token) {
+config.headers.Authorization = `Bearer ${token}`;
+
+}
+return config;
 });
 
 export default API;

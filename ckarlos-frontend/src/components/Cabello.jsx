@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; // reutilizamos estilos ya definidos (si los tienes allí)
+import './Home.css'; 
 import './Cabello.css';
 
 function Cabello() {

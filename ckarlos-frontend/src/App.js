@@ -25,6 +25,7 @@ import ControlCitas from './components/ControlCitas';
 import ControlServicios from './components/ControlServicios';
 import ControlProductos from './components/ControlProductos';
 import ControlReportes from './components/ControlReportes';
+import AgendarCitaCliente from './components/AgendarCitaCliente';
 
 function AppContent() {
 const location = useLocation();
@@ -50,6 +51,7 @@ return (
     <Route path="/spa" element={<Spa />} />
     <Route path="/productos" element={<Productos />} />
     <Route path="/contacto" element={<Contacto />} />
+    <Route path="/agendar-cita" element={<AgendarCitaCliente />} />
 
     {/* Privadas */}
     <Route element={<RutaProtegida />}>

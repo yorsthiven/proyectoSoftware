@@ -15,25 +15,33 @@ e.preventDefault();
 setError('');
 
 try {
-  const response = await API.post('/auth/login', {
-    correo: usuario,
-    contrasena: contrasena,
-  });
+const response = await API.post('/auth/login', {
+correo: usuario,
+contrasena: contrasena,
+});
 
-  const { token } = response.data;
 
-  if (recordar) {
-    localStorage.setItem('token', token);
-  } else {
-    sessionStorage.setItem('token', token);
-  }
+const { token, usuario: usuarioLogeado } = response.data;
 
-  alert('Inicio de sesión exitoso');
-  onClose();                 // Cierra el modal
-  navigate('/dashboard');   // Redirige a /dashboard
+if (recordar) {
+  localStorage.setItem('token', token);
+  localStorage.setItem('usuario', JSON.stringify(usuarioLogeado));
+} else {
+  sessionStorage.setItem('token', token);
+  sessionStorage.setItem('usuario', JSON.stringify(usuarioLogeado));
+}
+
+alert('Inicio de sesión exitoso');
+onClose();
+
+if (usuarioLogeado.tipo === 'Administrador') {
+  navigate('/dashboard');
+} else {
+  navigate('/agendar-cita');
+}
 } catch (err) {
-  console.error(err);
-  setError('Credenciales inválidas. Inténtalo de nuevo.');
+console.error(err);
+setError('Credenciales inválidas. Inténtalo de nuevo.');
 }
 };
 

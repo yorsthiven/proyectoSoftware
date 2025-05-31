@@ -1,0 +1,50 @@
+.agendar-cita-container {
+max-width: 600px;
+margin: 2rem auto;
+padding: 2rem;
+background-color: #f4f0eb;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+font-family: sans-serif;
+}
+
+.agendar-cita-container h2 {
+text-align: center;
+color: #654522;
+margin-bottom: 1rem;
+}
+
+.form-agendar-cita {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.form-agendar-cita select,
+.form-agendar-cita input[type="date"] {
+padding: 0.75rem;
+font-size: 1rem;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.btn-agendar {
+background-color: #654522;
+color: white;
+padding: 0.8rem;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.btn-agendar:hover {
+background-color: #a17448;
+}
+
+.mensaje {
+margin-top: 1rem;
+font-weight: bold;
+color: green;
+text-align: center;
+}

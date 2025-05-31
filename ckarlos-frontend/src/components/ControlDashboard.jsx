@@ -111,7 +111,7 @@ function ControlDashboard() {
           isOpen={mostrarModalCliente}
           onClose={() => {
             setMostrarModalCliente(false);
-            cargarDatosHoy(); // recarga datos
+            cargarDatosHoy(); 
           }}
           onClienteCreado={() => {
             setMensaje('Cliente creado con éxito');
@@ -123,7 +123,7 @@ function ControlDashboard() {
           isOpen={mostrarModalCita}
           onClose={() => {
             setMostrarModalCita(false);
-            cargarDatosHoy(); // recarga datos
+            cargarDatosHoy(); 
           }}
           onCitaCreada={() => {
             setMensaje('Cita registrada con éxito');

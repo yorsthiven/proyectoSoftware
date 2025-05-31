@@ -1,4 +1,4 @@
-/* Estructura del panel */
+
 .panel-clientes {
 display: flex;
 flex-direction: row;
@@ -13,7 +13,6 @@ overflow-y: auto;
 background-color: #f4f4f4;
 }
 
-/* Encabezado */
 .encabezado-dashboard {
 display: flex;
 justify-content: space-between;
@@ -45,7 +44,7 @@ font-size: 1rem;
 margin-bottom: 1rem;
 }
 
-/* Barra superior */
+
 .barra-superior {
 display: flex;
 align-items: center;
@@ -101,7 +100,6 @@ transition: background 0.3s;
 background-color: #c48d52;
 }
 
-/* Datos del cliente */
 .datos-cliente {
 background-color: #fff;
 padding: 1.5rem;
@@ -152,7 +150,6 @@ transition: background 0.3s;
 background-color: #c48d52;
 }
 
-/* Tabs */
 .tabs-cliente {
 margin-top: 20px;
 display: flex;
@@ -177,7 +174,6 @@ color: white;
 border-color: #654522;
 }
 
-/* Historial y preferencias */
 .tabla-historial,
 .tabla-preferencias {
 margin-top: 20px;
@@ -226,7 +222,6 @@ background-color: #fafafa;
 background-color: #f5d5b3;
 }
 
-/* Paginación */
 .paginacion {
 display: flex;
 gap: 8px;
@@ -250,14 +245,12 @@ color: white;
 border-color: #654522;
 }
 
-/* Próxima cita */
 .proxima-cita {
 margin-top: 2rem;
 font-weight: bold;
 color: #333;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
 .encabezado-dashboard {
 flex-direction: column;

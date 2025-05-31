@@ -4,16 +4,16 @@ import './Contacto.css';
 function Contacto() {
   return (
     <div className="contacto-page">
-      {/* Banner principal */}
+   
       <div className="banner-contacto">
         <img src="/banner.png" alt="Banner promocional" className="contacto-banner-img" />
 
       </div>
 
-      {/* Título */}
+   
       <h2 className="titulo-contacto">ESCRÍBENOS</h2>
 
-      {/* Formulario */}
+   
       <form className="formulario-contacto">
         <div className="campo-form">
           <label htmlFor="nombre">Nombre</label>
@@ -34,7 +34,7 @@ function Contacto() {
         <button type="submit" className="btn-enviar">Enviar</button>
       </form>
 
-      {/* Mapa y dirección */}
+     
       <div className="mapa-container">
         <h3 className="mapa-titulo">¿Dónde estamos ubicados?</h3>
         <p className="direccion">Calle 111 #17a-28, Bogotá</p>
