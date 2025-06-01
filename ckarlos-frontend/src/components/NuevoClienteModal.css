@@ -1,0 +1,39 @@
+.modal-content.nuevo-cliente-modal {
+padding: 2rem;
+max-width: 400px;
+}
+
+.form-nuevo-cliente {
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+}
+
+.form-nuevo-cliente input,
+.form-nuevo-cliente select {
+padding: 0.5rem;
+font-size: 1rem;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.btn-registrar {
+background-color: #654522;
+color: white;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.btn-registrar:hover {
+background-color: #50361b;
+}
+
+.error {
+color: red;
+font-weight: bold;
+margin-top: 0.5rem;
+}

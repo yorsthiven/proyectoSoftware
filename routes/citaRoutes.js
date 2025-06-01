@@ -6,6 +6,8 @@ const citasController = require('../controllers/citasController')
 //const verifyJWT = require('../middleware/verifyJWT')
 //router.use(verifyJWT)
 
+router.get('/citas-por-servicio', citasController.generarReporteCitasPorServicio)
+
 router.route('/')
     .get(citasController.obtenerCitas)
     .post(citasController.crearNuevaCita)

@@ -92,9 +92,53 @@ const borrarCita = asyncHandler(async (req, res) => {
     res.json({ message: `Cita con ID ${id} eliminada` })
 })
 
+const generarReporteCitasPorServicio = async (req, res) => {
+    try {
+        console.log("generando reporte")
+        const resultado = await Cita.aggregate([
+            {
+                $lookup: {
+                    from: 'horarioservicios',
+                    localField: 'horarioServicio',
+                    foreignField: '_id',
+                    as: 'horarioServicio'
+                }
+            },
+            { $unwind: '$horarioServicio' },
+            {
+                $lookup: {
+                    from: 'servicios',
+                    localField: 'horarioServicio.servicio',
+                    foreignField: '_id',
+                    as: 'servicio'
+                }
+            },
+            { $unwind: '$servicio' },
+            {
+                $group: {
+                    _id: '$servicio.nombre',
+                    totalCitas: { $sum: 1 }
+                }
+            },
+            { $sort: { totalCitas: -1 } }
+        ])
+
+        const totalCitas = resultado.reduce((sum, r) => sum + r.totalCitas, 0)
+
+        res.json({
+            totalCitas,
+            detallePorServicio: resultado
+        })
+    } catch (error) {
+        console.error('Error al generar el reporte:', error)
+        res.status(500).json({ error: 'Error al generar el reporte' })
+    }
+}
+
 module.exports = {
     obtenerCitas,
     crearNuevaCita,
     modificarCita,
-    borrarCita
+    borrarCita,
+    generarReporteCitasPorServicio
 }

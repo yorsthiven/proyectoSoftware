@@ -1,0 +1,107 @@
+.descripcion {
+display: flex;
+align-items: center;
+gap: 2rem;
+padding: 2rem;
+flex-wrap: wrap;
+}
+
+.imagen-descripcion {
+width: 50%;
+max-width: 600px;
+border-radius: 8px;
+object-fit: cover;
+}
+
+.texto-descripcion {
+flex: 1;
+text-align: center;
+}
+
+.texto-descripcion h2 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-bottom: 1rem;
+color: #654522;
+}
+
+.texto-descripcion p {
+font-size: 1.2rem;
+line-height: 1.6;
+color: #444;
+}
+
+
+.spa-servicios-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+gap: 2rem;
+padding: 2rem;
+}
+
+.spa-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.titulo-spa {
+background-color: #654522;
+color: white;
+padding: 1rem 1.5rem;
+font-size: 1.4rem;
+text-transform: uppercase;
+border-radius: 12px;
+text-align: center;
+width: 90%;
+margin-bottom: 1rem;
+font-weight: bold;
+}
+
+.spa-item img {
+width: 90%;
+height: auto;
+border-radius: 12px;
+object-fit: cover;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* SECCIÓN EXTRA SPA (vertical opcional si necesitas más servicios abajo) */
+.spa-servicios {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 2rem;
+}
+
+.spa-servicio {
+width: 100%;
+text-align: center;
+}
+
+.spa-servicio img {
+width: 90%;
+max-width: 1000px;
+height: auto;
+border-radius: 10px;
+object-fit: cover;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-servicio {
+background-color: #654522;
+color: white;
+padding: 1rem 1rem;
+font-size: 1.8rem;
+font-weight: bold;
+text-transform: uppercase;
+border-radius: 6px;
+margin: 1rem auto;
+width: calc(100% - 2rem); /* casi toda la página con pequeño margen lateral */
+box-sizing: border-box;
+text-align: center;
+}
+
+.titulo-H4 {
+color: #654522;
+}

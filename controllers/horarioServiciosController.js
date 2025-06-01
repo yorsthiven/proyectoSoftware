@@ -39,11 +39,11 @@ const crearNuevoHorario = asyncHandler(async (req, res) => {
 
     const nuevoHorario = await HorarioServicio.create({ estilista, servicio, fecha, hora })
 
-    if (nuevoHorario) {
-        res.status(201).json({ message: 'Nuevo horario creado' })
-    } else {
-        res.status(400).json({ message: 'Datos inválidos' })
-    }
+   if (nuevoHorario) {
+res.status(201).json(nuevoHorario); // devuelve el objeto completo, incluido _id
+} else {
+res.status(400).json({ message: 'Datos inválidos' })
+}
 })
 
 // @desc Modificar un horario de servicio

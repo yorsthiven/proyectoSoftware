@@ -1,0 +1,52 @@
+.panel-reportes {
+  display: flex;
+  height: 100vh;
+}
+
+.contenido-panel {
+  flex: 1;
+  padding: 2rem;
+}
+
+.titulo-dashboard {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.fecha-actual {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tabla-reportes {
+  margin-top: 2rem;
+}
+
+.tabla-reportes table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.tabla-reportes th,
+.tabla-reportes td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabla-reportes th {
+  background-color: #654522;
+  color: #ffffff;
+}
+
+.total-reporte {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grafico-pie {
+  margin-top: 2rem;
+}

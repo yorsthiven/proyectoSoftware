@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+.footer {
+  background: #654522;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.footer-horario {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.footer-aviso {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.footer-icono {
+  width: 30px;
+  height: 30px;
+}

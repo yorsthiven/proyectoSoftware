@@ -1,0 +1,103 @@
+header {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+{/* descripcion servicios */}
+
+
+.servicios-descripcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* para que en pantallas pequeñas se acomode */
+}
+
+.bloque-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bloque-imagen img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.texto-servicios {
+  flex: 2;
+  text-align: center;
+}
+
+.texto-servicios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.texto-servicios p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+{/* titulo servicios */}
+
+.servicios-container {
+  background-color: #654522;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 4px;
+  margin: 2rem 1rem;
+  width: calc(100% - 2rem); /* casi toda la página con pequeño margen lateral */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.servicios-container h1 {
+  font-size: 2.5rem;
+  color: #ffffff; /* texto blanco para contraste */
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+{/* cuadricula servicios */}
+
+
+.grid-servicios {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.servicio-item {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.servicio-item:hover {
+  transform: scale(1.05);
+}
+
+.servicio-item img {
+ width: 300px;
+height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.servicio-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #030303;
+  font-size: 1.8rem;
+}

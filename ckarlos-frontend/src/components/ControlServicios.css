@@ -1,0 +1,92 @@
+.panel-servicios {
+  display: flex;
+  height: 100vh;
+}
+
+.contenido-panel {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f0eb;
+}
+
+.encabezado-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-dashboard {
+  height: 60px;
+}
+
+.titulo-dashboard {
+  color: #654522;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.fecha-actual {
+  margin-top: 0.5rem;
+  color: #654522;
+}
+
+.acciones-servicios {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.acciones-servicios input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #a8774d;
+}
+
+.btn-nuevo,
+.btn-filtrar,
+.btn-ordenar {
+  background-color: #a8774d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-nuevo:hover,
+.btn-filtrar:hover,
+.btn-ordenar:hover {
+  background-color: #c08e60;
+}
+
+.tabla-servicios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-servicios th,
+.tabla-servicios td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.paginacion-servicios {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.paginacion-servicios button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e7b988;
+  cursor: pointer;
+}
+
+.paginacion-servicios button.activo {
+  background-color: #654522;
+  color: white;
+}

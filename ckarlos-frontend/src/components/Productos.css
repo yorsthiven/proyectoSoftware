@@ -1,0 +1,114 @@
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.producto {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto-img {
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.nombre-producto {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  color: red;
+  font-weight: bold;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-cantidad {
+  background-color: #b98b5f;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cantidad {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
+
+.btn-agregar {
+  background-color: #654522;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #b98b5f;
+}
+
+.titulo-productos {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #654522;
+  text-transform: uppercase;
+}
+
+.total-compra {
+  background-color: #654522; /* fondo café */
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.total-compra h2 {
+margin: 0;
+font-size: 2rem;
+font-weight: bold;
+color: white !important;
+}
+
+
+@media (max-width: 900px) {
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-productos {
+    grid-template-columns: 1fr;
+  }
+}

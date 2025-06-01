@@ -1,0 +1,86 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #654522;
+}
+
+h2 {
+  color: #654522;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-nueva-cita {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-nueva-cita input,
+.form-nueva-cita select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-nueva-cita button {
+  background-color: #654522;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+
+.form-nueva-cita button:hover {
+  background-color: #50361b;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.info-estilista {
+  margin: 5px 0 10px; 
+  font-size: 0.95rem; 
+  color: #654522; 
+  font-weight: bold; 
+}

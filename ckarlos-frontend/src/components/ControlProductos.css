@@ -1,0 +1,161 @@
+  /* Panel de productos */
+.panel-productos {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.contenido-panel {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Encabezado */
+.encabezado-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #654522;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-dashboard {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo-dashboard {
+  height: 70px;
+}
+
+/* Fecha */
+.fecha-actual {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Buscador */
+.barra-superior-productos {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.barra-superior-productos input[type="text"] {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #654522;
+  border-radius: 6px;
+  width: 260px;
+}
+
+.barra-superior-productos .btn-buscar {
+  background-color: #654522;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.barra-superior-productos .btn-buscar:hover {
+  background-color: #50361b;
+}
+
+/* Tarjetas resumen */
+.tarjetas-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tarjeta {
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta.total {
+  background-color: #b6ebb7;
+}
+
+.tarjeta.bajo {
+  background-color: #e0b575;
+}
+
+.tarjeta.sin {
+  background-color: #eb918a;
+}
+
+.tarjeta h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.tarjeta span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  border: 1px solid #654522;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabla-productos th {
+  background-color: #654522;
+  color: #fffdfd;
+}
+
+.tabla-productos tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Paginación */
+.paginacion-productos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.paginacion-productos button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.paginacion-productos button.activo {
+  background-color: #654522;
+  color: white;
+  border-color: #654522;
+}
+
+

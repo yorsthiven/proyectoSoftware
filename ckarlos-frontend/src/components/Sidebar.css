@@ -1,0 +1,43 @@
+.menu-lateral {
+  width: 240px;
+  background-color: #654522;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-usuario {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: 3px solid white;
+}
+
+.menu-opciones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.opcion {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.opcion:hover {
+  background-color: #50361b;
+}
+
+.cerrar-sesion {
+  margin-top: 2rem;
+}

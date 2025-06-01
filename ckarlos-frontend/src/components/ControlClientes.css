@@ -1,0 +1,305 @@
+
+.panel-clientes {
+display: flex;
+flex-direction: row;
+height: 100vh;
+font-family: 'Segoe UI', sans-serif;
+}
+
+.contenido-panel {
+flex: 1;
+padding: 2rem;
+overflow-y: auto;
+background-color: #f4f4f4;
+}
+
+.encabezado-dashboard {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #654522;
+padding: 1rem 2rem;
+color: white;
+border-radius: 8px;
+margin-bottom: 1.5rem;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.logo-dashboard {
+height: 60px;
+width: auto;
+}
+
+.titulo-dashboard {
+font-size: 1.8rem;
+text-transform: uppercase;
+margin: 0;
+}
+
+.fecha-actual {
+font-weight: bold;
+color: #333;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+
+.barra-superior {
+display: flex;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+margin-bottom: 1.5rem;
+}
+
+.btn-nuevo {
+background-color: #654522;
+color: white;
+border: none;
+padding: 0.6rem 1.4rem;
+font-size: 1rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+white-space: nowrap;
+}
+
+.btn-nuevo:hover {
+background-color: #654522;
+}
+
+.busqueda-cliente {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+flex-wrap: wrap;
+}
+
+.busqueda-cliente input {
+padding: 0.6rem 1rem;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 250px;
+max-width: 100%;
+}
+
+.btn-buscar {
+padding: 0.6rem 1.2rem;
+font-size: 1rem;
+background-color: #654522;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.btn-buscar:hover {
+background-color: #c48d52;
+}
+
+.datos-cliente {
+background-color: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+margin-top: 1rem;
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.datos-cliente input[type="text"],
+.datos-cliente input[type="email"],
+.datos-cliente input[type="tel"],
+.datos-cliente input[type="password"] {
+width: 100%;
+max-width: 400px;
+margin-bottom: 12px;
+padding: 10px;
+border: 1px solid #bbb;
+border-radius: 6px;
+font-size: 15px;
+box-sizing: border-box;
+transition: border-color 0.2s;
+}
+
+.datos-cliente input:focus {
+border-color: #654522;
+outline: none;
+}
+
+.acciones-cliente {
+margin-top: 15px;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.acciones-cliente button {
+padding: 10px 16px;
+font-size: 14px;
+background-color: #654522;
+border: none;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.acciones-cliente button:hover {
+background-color: #c48d52;
+}
+
+.tabs-cliente {
+margin-top: 20px;
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+.tabs-cliente button {
+padding: 8px 12px;
+background-color: #eee;
+border: 1px solid #ccc;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s;
+font-weight: bold;
+}
+
+.tabs-cliente button.activo,
+.tabs-cliente button:hover {
+background-color: #654522;
+color: white;
+border-color: #654522;
+}
+
+.tabla-historial,
+.tabla-preferencias {
+margin-top: 20px;
+}
+
+.tabla-historial h4,
+.tabla-preferencias h4 {
+font-size: 1.2rem;
+color: #333;
+margin-bottom: 12px;
+}
+
+.tabla-historial table,
+.tabla-preferencias table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+.tabla-historial th,
+.tabla-historial td,
+.tabla-preferencias th,
+.tabla-preferencias td {
+border: 1px solid #654522;
+padding: 10px 12px;
+text-align: left;
+font-size: 14px;
+}
+
+.tabla-historial th,
+.tabla-preferencias th {
+background-color: #654522;
+color: #ffffff;
+}
+
+.tabla-historial tr:nth-child(even),
+.tabla-preferencias tr:nth-child(even) {
+background-color: #fafafa;
+}
+
+.tabla-historial tr:hover,
+.tabla-preferencias tr:hover {
+background-color: #f5d5b3;
+}
+
+.paginacion {
+display: flex;
+gap: 8px;
+justify-content: center;
+margin-top: 12px;
+flex-wrap: wrap;
+}
+
+.paginacion button {
+padding: 6px 12px;
+border: 1px solid #654522;
+background: white;
+border-radius: 4px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.paginacion button.activo {
+background-color: #654522;
+color: white;
+border-color: #654522;
+}
+
+.proxima-cita {
+margin-top: 2rem;
+font-weight: bold;
+color: #333;
+}
+
+@media (max-width: 768px) {
+.encabezado-dashboard {
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+}
+
+.barra-superior {
+flex-direction: column;
+align-items: stretch;
+}
+
+.busqueda-cliente {
+flex-direction: column;
+align-items: stretch;
+}
+
+.tabs-cliente {
+justify-content: center;
+}
+
+.acciones-cliente {
+flex-direction: column;
+align-items: stretch;
+}
+
+.tabla-historial table,
+.tabla-preferencias table {
+font-size: 13px;
+}
+}
+
+@media (max-width: 480px) {
+.titulo-dashboard {
+font-size: 1.5rem;
+}
+
+.logo-dashboard {
+height: 40px;
+}
+
+.btn-nuevo,
+.btn-buscar {
+font-size: 0.9rem;
+padding: 0.5rem 1rem;
+}
+
+.tabs-cliente button {
+font-size: 0.9rem;
+padding: 6px 10px;
+}
+}
