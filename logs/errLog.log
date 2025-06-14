@@ -1,0 +1,1 @@
+20250605	22:02:44	0cb3878a-0116-4a75-af5a-4166179a2a39	MongoServerError: E11000 duplicate key error collection: ckarlosPeluqueria.usuarios index: usuario_1 dup key: { usuario: "cliente123" }	POST	/usuarios	undefined
